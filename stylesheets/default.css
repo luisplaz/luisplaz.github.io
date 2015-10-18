@@ -1,0 +1,157 @@
+* {
+
+	border-top:0px 2px 0px 2px;
+	font-family: Verdana;
+	background-color: #c0f862;
+}
+
+li {
+
+	text-decoration: none;
+	text-align: center;
+	background-color:transparent;
+	font-size: 0.5em;
+	color: #4E5566;
+	list-style-type: none;
+	display: inline-block;
+	margin: auto;
+
+}
+
+ul {
+
+	margin: 0 auto;
+	display: inline-block;
+	padding:0;
+	text-align: center;
+	background-color: transparent;
+
+}
+
+nav{
+
+	height: 5em;
+	display:block;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+a {
+	color: #4E5566;
+	font-weight: bold;
+	display: inline-block;
+	border-radius: 2em;
+	background-color: #1C444C;
+	color:white;
+	height: 2em;
+	width: 10em;
+	text-align: center;
+	margin: auto;
+	text-decoration: none;
+	font-size: 1.8em;
+	padding:0;
+	line-height: 2em;
+
+}
+
+footer {
+
+	color: #2D5C89;
+	font-weight: bold;
+	text-align: right;
+	margin-bottom: 0;
+}
+
+h3 {
+
+	text-align: center;
+	font-size: 4em;
+	font-weight: bold;
+	color:#3d4987;
+	margin-top: 0;
+
+}
+
+section p {
+
+	color:#3d4987;
+	text-align: center;
+	line-height: 2em;
+
+}
+
+a:hover {
+
+	background-color: #4AAFE3;
+
+}
+
+.profile-img {
+
+	position: relative;
+	margin: auto;
+	display:block;
+	border-radius: 100em;
+	border:15px solid #1C444C;
+	height: 25%;
+	width: 25%;
+
+}
+
+.topbanner {
+
+	z-index: 1;
+	position:;
+	text-align: center;
+	font-size: 1.25em;
+	padding: 0px 3px 1px 3px;
+	margin: auto;
+	color: white;
+
+}
+
+#intro {
+
+	margin-top: 0;
+	border: 2px double white;
+	background-color: #1166a3;
+	font-family: sans-serif;
+}
+
+#greeting {
+
+	background-color: #3976B0;
+	font-family: sans-serif;
+	font-size: 1.5em;
+	border-radius: 10em;
+	height: 2em;
+	text-align: center;
+	line-height: 2em;
+}
+
+#lucida {
+
+	font-family: monospace;
+	font-size: 5em;
+}
+
+#info {
+
+	font-family: monospace;
+	font-size: 1.5em;
+}
+
+#footer {
+
+	margin-bottom: 0;
+}
+
+#whiteback {
+
+	background-image: url(http://www.ootpdevelopments.com/board/attachments/ootp-mods-logos-graphics-html/278286d1362968819-league-logo-request-yves_guillou_venezuela_flag_scalable_vector_graphics_svg_clip_art_wall_paper_background-1332px.png);
+	background-repeat: no-repeat;
+	background-size: 50%;
+	text-align: center;
+	background-position: center;
+}

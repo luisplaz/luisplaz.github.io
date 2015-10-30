@@ -38,20 +38,8 @@ nav{
 }
 
 a {
-	color: #4E5566;
-	font-weight: bold;
-	display: inline-block;
-	border-radius: 2em;
-	background-color: #1C444C;
-	color:white;
-	height: 2em;
-	width: 10em;
-	text-align: center;
-	margin: auto;
-	text-decoration: none;
-	font-size: 1.8em;
-	padding:0;
-	line-height: 2em;
+
+
 
 }
 
@@ -68,17 +56,27 @@ h3 {
 	text-align: center;
 	font-size: 4em;
 	font-weight: bold;
-	color:#3d4987;
+	color: #3d4987;
 	margin-top: 0;
 
 }
 
 section p {
 
-	color:#3d4987;
+	color: #3d4987;
 	text-align: center;
 	line-height: 2em;
 
+}
+
+i {
+
+	margin: 0.2em;
+}
+
+a:link {
+
+	color: #3d4987;
 }
 
 a:hover {
@@ -109,6 +107,34 @@ a:hover {
 	margin: auto;
 	color: white;
 
+}
+
+.logo-a {
+
+	color: #4E5566;
+	border-radius: ;
+	text-align: right;
+	margin: 0;
+	padding:0;
+	line-height: 0;
+}
+
+.buttons {
+
+	color: #4E5566;
+	font-weight: bold;
+	display: inline-block;
+	border-radius: 2em;
+	background-color: #1C444C;
+	color:white;
+	height: 2em;
+	width: 10em;
+	text-align: center;
+	margin: auto;
+	text-decoration: none;
+	font-size: 1.8em;
+	padding:0;
+	line-height: 2em;
 }
 
 #intro {

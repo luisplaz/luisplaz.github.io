@@ -12,6 +12,10 @@ li {
 
 	display: block;
 	clear: both;
+	text-align: center;
+	width: auto;
+	margin: 2em;
+	color: white;
 }
 
 footer {
@@ -34,6 +38,28 @@ a {
 section {
 
 	text-align: center;
+
+}
+
+h2 {
+
+	clear: both;
+
+}
+
+#post-head {
+
+	text-align: left;
+	font-size: 2em;
+	width: 50%:;
+	display: inline;
+	float:left;
+
+}
+
+#post-nav {
+
+
 
 }
 
@@ -78,14 +104,15 @@ section {
 
 .menu-a {
 
-	 background-color: #3976B0;
-	 text-align: center;
+	background-color: #3976B0;
+	text-align: center;
 }
 
 .line {
 
 	border-bottom: #3d4987 3px solid;
-	margin-bottom: 2em;
+	margin: 0;
+	padding-bottom: 2em;
 
 }
 
@@ -93,4 +120,21 @@ section {
 
 	display: block;
 }
+
+#blog-nav {
+
+	display:inline-block;
+	font-size: 0.25em;
+	margin: 0;
+	margin-top: 0.2em;
+}
+
+#right {
+
+	text-align: right;
+}
+
+#left {
+
+	text-align: left;
 

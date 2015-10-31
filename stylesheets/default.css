@@ -37,12 +37,6 @@ nav{
 	text-align: center;
 }
 
-a {
-
-
-
-}
-
 footer {
 
 	color: #2D5C89;
@@ -74,15 +68,26 @@ i {
 	margin: 0.2em;
 }
 
+
+a {
+
+	color: #2D5C89;
+}
+
 a:link {
 
-	color: #3d4987;
+	color: #2D5C89;
 }
 
 a:hover {
 
 	background-color: #4AAFE3;
 
+}
+
+footer a:hover{
+
+	background-color: transparent;
 }
 
 .profile-img {
@@ -111,10 +116,10 @@ a:hover {
 
 .logo-a {
 
-	color: #4E5566;
+	color: #2D5C89;
 	border-radius: ;
 	text-align: right;
-	margin: 0;
+	margin: 0.2em;
 	padding:0;
 	line-height: 0;
 }
@@ -128,13 +133,24 @@ a:hover {
 	background-color: #1C444C;
 	color:white;
 	height: 2em;
-	width: 10em;
+	width: auto;
 	text-align: center;
 	margin: auto;
 	text-decoration: none;
 	font-size: 1.8em;
-	padding:0;
+	padding:0.75em;
 	line-height: 2em;
+}
+
+.menubuttons {
+
+	width:10em;
+}
+
+.fa:hover {
+
+	color: #4AAFE3;
+	background-color: transparent;
 }
 
 #intro {

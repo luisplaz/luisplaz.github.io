@@ -38,13 +38,34 @@ a {
 section {
 
 	text-align: center;
-
 }
 
 h2 {
 
 	clear: both;
+}
 
+nav a:hover {
+
+	font-family: sans-serif;
+}
+
+section p {
+
+	text-align: justify;
+	color: black;
+	line-height: 2.5em;
+}
+
+pre {
+
+	overflow: auto;
+	border: solid 1px #9AACAE;
+	font-family: courier,Georgia,Serif;
+	color: $(body.text.color);
+	background: #EFEFEF;
+	margin: 5px;
+	padding: 5px;
 }
 
 #post-head {
@@ -54,13 +75,6 @@ h2 {
 	width: 50%:;
 	display: inline;
 	float:left;
-
-}
-
-#post-nav {
-
-
-
 }
 
 #bfooter {
@@ -142,4 +156,11 @@ h2 {
 #left {
 
 	text-align: left;
+}
 
+#blog-buttons {
+
+	padding: 1em;
+	background-color: #1166a3;
+	border:#2D5C89 solid 10px;
+}

@@ -76,7 +76,7 @@ a {
 
 a:link {
 
-	color: #2D5C89;
+	color: grey;
 }
 
 a:hover {
@@ -94,6 +94,8 @@ footer a:hover{
 
 	position: relative;
 	margin: auto;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 	display:block;
 	border-radius: 100em;
 	border:15px solid #1C444C;
@@ -191,9 +193,12 @@ footer a:hover{
 
 #whiteback {
 
-	background-image: url(http://www.ootpdevelopments.com/board/attachments/ootp-mods-logos-graphics-html/278286d1362968819-league-logo-request-yves_guillou_venezuela_flag_scalable_vector_graphics_svg_clip_art_wall_paper_background-1332px.png);
+	background-image: url(http://aterrizar.net/wp/wp-content/uploads/2014/10/background.jpg);
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-size: 100%;
 	text-align: center;
 	background-position: center;
+	margin: 0;
+	border-bottom: white solid 10px;
+	border-top: white solid 10px;
 }

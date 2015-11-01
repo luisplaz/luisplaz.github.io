@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+  <title>The Blog of Luis Fernando Plaz</title>
+  
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  
+</head>
+
+<main>
+
+  <nav id="right">
+
+    <h1 id="post-head">Enumerable Methods</h1>
+    <ul>
+
+      <li id="blog-nav"><a class="buttons menubuttons" href="../index.html">Home</a></li>
+      <li id="blog-nav"><a class="buttons menubuttons" href="index.html">My Blog</a></li>
+
+    </ul>
+  </nav>
+
+  <h2 id="left">How to use group_by enumerable</h2>
+
+  <h4>November 1st 2015</h4>
+
+  <section>
+
+    <p>
+      In this blog post we will look into the enumerable method group_by. First of all we should understand that enumerble is a class that contains a great variety of methods that let our variables do a great number of tasks without having to rewrite the code for those taks we want to be executed.
+
+      In this case the enumerable method group_by that by looking at its name alredy give us a hint of what to expect.
+
+      For an easier understanding lets try this method on an array:
+    </p>
+
+    <pre> new_array = [1,2,3,4,5,6,7,8,9,10]</pre>
+
+    <p>
+      Now lets say we want to get the odd numbers on one array and the even on another.How would we go about doing this....Maybe group_by those divisible by 2 and those that arent? Let's do this:
+
+      First we will group_by even, our group_by method need a condition for this. We said before we wanted those divisible by 2, in this case perfectly divisible so our remainder when divided should be 0. Let's code this
+    </p>
+
+    <pre> new_array = [1,2,3,4]
+
+      def group_by(array)
+
+      return array.group_by{ |i| i%2 == 0}
+
+      end
+    </pre>
+
+    <p>
+      With this code we would want ruby to,when group_by method is called, pass the array (new_array) and group its elements by those that satisfy the even condition (divisible by 2) and those that dont (odds). Now, lets call it:
+    </p>
+
+    <pre> puts group_by(new_array)</pre>
+
+    <p>When called we should get this:</p>
+
+    <pre> {false=>[1, 3], true=>[2, 4]} </pre>
+
+    <p>We can see ruby analyzed each element in the array and checked if it was divisible by 2. Those that satisfied the condition have the true key and those that didnt false.
+      We can see the output was a hash, we can change the values to odd and even like this:
+    </p>
+
+    <pre>new_array = [1,2,3,4]
+
+      def group_by(array)
+
+      return array.group_by{ |i| i%2 == 0 ? :even : :odd}
+
+      end
+
+      print group_by(new_array)
+
+    </pre>
+
+    <p>Resulting in a hash with keys that are more informative:</p>
+
+    <pre>{:odd=>[1, 3], :even=>[2, 4]}</pre>
+
+    <p>
+      Hope this helps
+    </p>
+    <p>
+      Have a good one…….
+    </p>
+
+  </section>
+
+</main>

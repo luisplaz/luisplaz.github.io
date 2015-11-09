@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+  <title>The Blog of Luis Fernando Plaz</title>
+  
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  
+</head>
+
+<main>
+
+  <nav id="right">
+
+    <h1 id="post-head">Ruby Classes</h1>
+    <ul>
+
+      <li id="blog-nav"><a class="buttons menubuttons" href="../index.html">Home</a></li>
+      <li id="blog-nav"><a class="buttons menubuttons" href="index.html">My Blog</a></li>
+
+    </ul>
+  </nav>
+
+  <h2 id="left">Classes in Ruby....</h2>
+
+  <h4>November 9th 2015</h4>
+
+  <section>
+
+    Create an example class and use it to teach others when to use instance variables, instance methods, etc. for that object. Write for an audience of newb programmers.
+
+    <p>
+
+      In this blog post we will create a class and go through the use of instance variables and instance methods.
+
+      So lets start. Lets make a blueprint or "class" for the creation of a bicycle. This blueprint will probably need a few things for us to create a bicycle. I would say we can start with what colo we want, how may wheels, ringer or no ringer, seat material etc.
+
+      When writing a class what we are basically doing is designing what an object should have when it is created, then when we create a version of it or an "instance" we can fill out the information asked by the blueprint and create a new bicycle in this case. Afterwards we can declare methods that will work for all versions of this blueprint, called instance methods.
+
+      Here is a basic example of our bicycle class:
+
+    </p>
+
+    <pre> 
+
+      class Bicycle
+
+      attr_reader = :color
+
+      def initialize(color,num_wheel,ringer,seat_material)
+
+      @color = color
+      @ringer = ringer
+      @num_wheel = num_wheel
+      @seat_material = seat_material
+
+      end
+
+    </pre>
+
+    <p>
+
+      Now, we need to make a pause here an explain that inside the class we also have class methods, in this case we see an initialize method. This method creates our new bycicle with the specifications we have passed it. We will explain the attr_reader line later.
+
+      So if we call this:
+
+    </p>
+
+    <pre> 
+
+      cool_bike = Bicycle.new(red,2,false,leather)
+
+    </pre>
+
+    <p>
+
+      We now have a cool_bike that is red, has 2 wheels, has no ringer (because we declared having a ringer to be false) and has leather seats!!.
+
+      Lets ride it then.....
+
+      We can now make an method that will work for this instance (cool_bike) of the bike class. Here we can explain what attr_reader does. Att_reader lets us have access to the description of the bike we just made, so if we want to be able to access its wheel number we would write:
+
+    </p>
+
+    <pre>
+
+    attr_reader = :num_wheel
+
+    </pre>
+
+    <p>
+
+      We can make this method like so:
+
+    </p>
+
+    <pre>
+
+    def ride(object)
+
+    print "I am riding my #{object.color} bike..!!!!"
+
+    end
+
+    </pre>
+
+    <p>
+
+    So, with this in mind we can get a little bit of an inside understanding on classes and instances, and methods that they use. 
+
+    A little recap:
+
+    Classes are blueprints, like recipes, for objects we can later make.
+
+    Instances of an object is a created object from a blueprint we had access to.
+
+    Instance methods are methods available to the instance of an object.
+
+    </p>
+
+    <p>
+      Hope this helps
+    </p>
+    <p>
+      Have a good one…….
+    </p>
+
+  </section>
+
+</main>

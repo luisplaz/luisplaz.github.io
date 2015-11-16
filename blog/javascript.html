@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+  <title>The Blog of Luis Fernando Plaz</title>
+  
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  
+</head>
+
+<main>
+
+  <nav id="right">
+
+    <h1 id="post-head">Learning Javascript</h1>
+    <ul>
+
+      <li id="blog-nav"><a class="buttons menubuttons" href="../index.html">Home</a></li>
+      <li id="blog-nav"><a class="buttons menubuttons" href="index.html">My Blog</a></li>
+
+    </ul>
+  </nav>
+
+  <h2 id="left">Javascript week.</h2>
+
+  <h4>November 15th 2015</h4>
+
+  <section>
+    
+    <p>
+
+      In this blog post I will address the difference between ruby classes and javascript constructor function.
+
+      Lets strat with ruby:
+
+      In ruby when creating a new object using the new method on a class object. The class object will basically contain functions that initialize the fundamental variables that define this object and the things this object can do.
+
+      Heres we have an example of creating a new instance of the class dog.
+
+    </p>
+
+    <pre>
+
+    class Dog
+
+    def initialize
+
+    @name: "Rufus"
+    @breed: "Beagle"
+    @color: "Brown"
+
+    end
+
+    def bark
+
+    print 'woof'
+
+    end
+
+    --------------
+
+    new_dog = Dog.new
+
+    new_dog.bark
+
+    </pre>
+
+    <p>
+
+    In this code we create a dog class that when called on with the new method will define the new variable as a new dog with the variables stated in initialize and the method bark that makes the dog bark.
+
+    So the code in the end will make this instance of new_dog print woof.
+
+    Now in Javascript, we can create object using the object literal method like so:
+
+    </p>
+
+    <pre>
+
+    new_dog = {
+
+    name:"Rufus",
+    breed: "Beagle",
+    color: "Brown",
+    }
+
+    </pre>
+
+    <p>
+
+    Or we can use the new operator on a constructor function. This function is called cosntructor because it will construct the object with the information it has within, it workd the same way as the initialize method from java.
+
+    This works like so:
+
+    </p>
+
+    <pre>
+
+    function Create_dog() {
+
+    this.name = "Rufus";
+    this.breed = "Beagle";
+    this.color = "Brown";
+
+    }
+
+    new_dog = new Create_dog()
+
+    </pre>
+
+    <p>
+    In conclusion these are the basic differences between ruby object creation and javascript object creation. Please refer to this <a href="http://stantona.github.io/blog/2012/12/20/a-tale-of-two-object-models-javascript-and-ruby-part-2/"> link</a> for a more in depth explanation.
+    
+    <p>
+      Hope this helps
+    </p>
+    <p>
+      Have a good one…….
+    </p>
+
+  </section>
+
+</main>

@@ -13,152 +13,200 @@
 
   <nav id="right">
 
-    <h1 id="post-head">Arryays VS Hashes</h1>
-    <ul>
+   <ul id="bloglist">
 
-      <li id="blog-nav"><a class="buttons menubuttons" href="../index.html">Home</a></li>
-      <li id="blog-nav"><a class="buttons menubuttons" href="index.html">My Blog</a></li>
+    <li id="blog-nav"><a class="buttons menubuttons" href="../index.html">Home</a></li>
+    <li id="blog-nav"><a class="buttons menubuttons" href="index.html">My Blog</a></li>
 
-    </ul>
-  </nav>
+  </ul>
 
-  <h2 id="left">When to use each one and what they are</h2>
+</nav>
 
-  <h4>October 24th 2015</h4>
+<h3 id="left lucida margin-title">Arryays VS Hashes</h3>
 
-  <section>
+<h1 id="center">When to use each one and what they are</h1>
 
-    <p>
-      This week we will be talking about hashes and arrays and what they should be used for and what makes them different.
-      Let’s start off with arrays. 
-    </p>
+<h4 id="center">October 24th 2015</h4>
 
-    <h2> ARRAYS </h2>
+<section>
 
-    <p>
-      Arrays are ordered collections or in a simpler way a list of slots that can store a number of objects, so we can have an array of strings, of integers even an array of arrays. Also, each slot has a number assigned to it by default and in the case of arrays these numbers start from 0 onward - So the first slot in an array is slot 0 - .<br> <br>
-      Arrays as we can see are used to store objects in an ordered manner so we can access them later using their slot number. Lets review how to create arrays and extract or store objects in them.<br> <br>
-      In ruby we can create an array a number of ways. Here are 2 of them:<br><br>
-      <pre>a.  new_Array = Array.new(5,"def_values")
-        <br><br>
-        b.  new_Array_Two = [ ]
-        <br><br></pre>
-        Method (a) makes and array through the Array.new method, this designates an empty or filled array to a variable of our choosing in this case new_Array. The arguments inside the parenthesis are optional, these indicate first the array size – number of slots – and second the default value with which each slot starts. In this case we will have a array, new_Array, that has 5 slots with the string def_value in each one.
-        <br><br>
-        <pre>
-          Array.new = [“def_value”, “def_value”, “def_value”, “def_value”, “def_value”]
-        </pre>
-        <br><br>
-        Method (b) makes and array through the literal array constructor [ ], this designates an empty or filled array to a variable of our choosing in this case new_Array_Two. Initially if we only write the code as stated - new_Array_Two = [ ] – we create an empty array. If we want to create it with things inside from the start we can just add them into the brackets 
-        <pre> 
-        new_Array_Two = [ 1,2,3,4,5]
-        </pre> 
-        In this case, we create an array of 5 slots with numbers one – five inside each respective slot.
-        <br><br>
-        Both methods work in different ways but ultimately produce the same result.
-        <br><br>
-        Now, to add, remove or retrieve from arrays we can use the following code, for these examples we will use a 5 slot array called 
-        <pre>
-        five_Slot_Array = [1,2,3,4,5]
-        </pre>
-        <br><br>
-        Add – If we desire to add more objects into our five_Slot_Array we simply add a new object in the next slot or we can replace an object for another in an already occupied slot. Example:
-        <pre>
-        five_Slot_Array [6] = 6
-        </pre>
-        <br><br>
-        So our array would now look like this: 
-        <pre>
-        five_Slot_Array = [1,2,3,4,5,6]</pre>
-        <br><br>
-        Retrieve – We can retrieve in a similar way to adding. We now know we have 6 slots and 6 objects so if we want to know what is in one of the slots lets say – slot 2 -  we write:
-        <br><br>
-        <pre>
-        p five_Slot_Array [2]
-        </pre>
-        This should return 3 – Remember slot 0 is 1, and slot 1 is 2……
-        <br><br>
-        Lastly, we will explain removing.
-        <br><br>
-        Remove – to remove slot 3 from five_Slot_Array we simply write:
+  <p>
+    This week we will be talking about hashes and arrays and what they should be used for and what makes them different.
+    Let’s start off with arrays. 
+  </p>
 
-        <pre>
-        five_Slot_Array.delete(3)
-        </pre> 
+  <h2> ARRAYS </h2>
 
-        This would result in this array
+  <p>
+    Arrays are ordered collections or in a simpler way a list of slots that can store a number of objects, so we can have an array of strings, of integers even an array of arrays. Also, each slot has a number assigned to it by default and in the case of arrays these numbers start from 0 onward - So the first slot in an array is slot 0 - .<br> <br>
+    Arrays as we can see are used to store objects in an ordered manner so we can access them later using their slot number. Lets review how to create arrays and extract or store objects in them.<br> <br>
+    In ruby we can create an array a number of ways. Here are 2 of them:
+  </p>
 
-        <pre>
-        five_Slot_Array = [1,2,4,5]
-        </pre>
+  <pre>a.  new_Array = Array.new(5,"def_values")
+    <br><br>
+    b.  new_Array_Two = [ ]
+    <br><br>
+  </pre>
 
-      </p>
+  <p> Method (a) makes and array through the Array.new method, this designates an empty or filled array to a variable of our choosing in this case new_Array. The arguments inside the parenthesis are optional, these indicate first the array size – number of slots – and second the default value with which each slot starts. In this case we will have a array, new_Array, that has 5 slots with the string def_value in each one.
+  </p>
 
-      <h2>HASHES</h2>
+  <pre>
+    Array.new = [“def_value”, “def_value”, “def_value”, “def_value”, “def_value”]
+  </pre>
 
-      <p>
-        Now hashes are basically the same thing as array except they store objects in pair, there is a key that is a reference to the slot where the object is located and a value that point to the object inside said slot. The interesting part about hashes is that instead of having a default key like arrays do – array keys are numbers 0…onward -, hashes can have any object as a key.
-        <br><br>
-        So lest say we assign the key – One – to the value 1. When we want to access the value 1 we simply look up the key One in the hash. One thing that must be taken into account is that keys are unique and cannot be repeated, so there can only be a key/value pair per key.
-        <br><br>
-        In ruby we can create an array a number of ways. Here are 2 of them:
+  <p> Method (b) makes and array through the literal array constructor [ ], this designates an empty or filled array to a variable of our choosing in this case new_Array_Two. Initially if we only write the code as stated - new_Array_Two = [ ] – we create an empty array. If we want to create it with things inside from the start we can just add them into the brackets .
+  </p>
 
-        <br><br>
-        <pre>
-        a.  new_Hash = Hash.new
-        </pre>
-        <br><br>
-        <pre>
-        b.  new_Hash_Two = { }
-        </pre>
-        <br><br>
-        Method (a) creates an empty hash that can later be populated and method (b) creates an empty hash as well but can be populated if we wanted to in this same code. Example.
-        <br><br>
-        <pre>
-        new_Hash_Two = { 1=>2, 3=>4, 5=>6}
-        </pre>
-        We use the => symbol to assing a value to a key so it works like this (key => value).
-        <br><br>
-        If we want to insert a new key/value into the hash we just type:
-        <br><br>
-        <pre>
-        new_Hash_Two["Three"] = 3
-        </pre>
-        This adds a key/value (Three/3) into our hash.
-        If we want to retrieve something from the hash we use the key assigned to the value. Like this:
-        <br><br>
-        <pre>
-        p new_Hash_Two["Three"]
-        </pre>
-        Which would return 3.
-        <br><br>
-        Lastly if we want to delete something from the hash we write the following code:
-        <pre>
-        new_Hash_Two.delete(“Three)
-        </pre>
-        This would delete key/value associated with key “Three”
-        <br><br>    
-      </p>
+  <pre> 
+    new_Array_Two = [ 1,2,3,4,5]
+  </pre> 
 
-      <h2>Why use one over the other</h2>
+  <p>
+    In this case, we create an array of 5 slots with numbers one – five inside each respective slot.
+    <br><br>
+    Both methods work in different ways but ultimately produce the same result.
+    <br><br>
+    Now, to add, remove or retrieve from arrays we can use the following code, for these examples we will use a 5 slot array called 
+  </p>
 
-      <p>
+  <pre>
+    five_Slot_Array = [1,2,3,4,5]
+  </pre>
 
-        So in conclusion an array serves as a kind of list that is not very specific as to the location of its list items. The hashes are a lot more specific and take less time in searching for values as they have specific keys associated with them that can be configured to be more descriptive as to the value in the slot. 
+  <p>
+    Add – If we desire to add more objects into our five_Slot_Array we simply add a new object in the next slot or we can replace an object for another in an already occupied slot. Example:
+  </p>
 
-      </p>
+  <pre>
+    five_Slot_Array [6] = 6
+  </pre>   
 
-      <br>
+  <p>
+    So our array would now look like this: 
+  </p>
 
-      <p>
-        So, thats all for this week. These are hard concepts that require practice to get and even now I feel like I still need more time to master them.
-      </p>
-      <p>
-        Hope this helps
-      </p>
-      <p>
-        Have a good one…….
-      </p>
+  <pre>
+    five_Slot_Array = [1,2,3,4,5,6]
 
-    </section>
-  </main>
+  </pre>
+  
+  <p>
+    Retrieve – We can retrieve in a similar way to adding. We now know we have 6 slots and 6 objects so if we want to know what is in one of the slots lets say – slot 2 -  we write:
+
+  </p>
+
+  <pre>
+    p five_Slot_Array [2]
+  </pre>
+
+  <p>
+    This should return 3 – Remember slot 0 is 1, and slot 1 is 2……
+    <br><br>
+    Lastly, we will explain removing.
+    <br><br>
+    Remove – to remove slot 3 from five_Slot_Array we simply write:
+  </p>
+
+  <pre>
+    five_Slot_Array.delete(3)
+  </pre> 
+
+  <p>
+    This would result in this array
+  </p>
+
+  <pre>
+    five_Slot_Array = [1,2,4,5]
+  </pre>
+
+</p>
+
+<h2>HASHES</h2>
+
+<p>
+  Now hashes are basically the same thing as array except they store objects in pair, there is a key that is a reference to the slot where the object is located and a value that point to the object inside said slot. The interesting part about hashes is that instead of having a default key like arrays do – array keys are numbers 0…onward -, hashes can have any object as a key.
+</p>
+<p>
+  So lest say we assign the key – One – to the value 1. When we want to access the value 1 we simply look up the key One in the hash. One thing that must be taken into account is that keys are unique and cannot be repeated, so there can only be a key/value pair per key.
+  <br><br>
+  In ruby we can create an array a number of ways. Here are 2 of them:
+</p>
+<pre>
+  a.  new_Hash = Hash.new
+</pre>
+
+<pre>
+  b.  new_Hash_Two = { }
+</pre>
+
+<p>
+Method (a) creates an empty hash that can later be populated and method (b) creates an empty hash as well but can be populated if we wanted to in this same code. Example.
+</p>
+
+<pre>
+  new_Hash_Two = { 1=>2, 3=>4, 5=>6}
+</pre>
+
+<p>
+We use the => symbol to assing a value to a key so it works like this (key => value).
+</p>
+
+<p>
+If we want to insert a new key/value into the hash we just type:
+</p>
+
+<pre>
+  new_Hash_Two["Three"] = 3
+</pre>
+
+<p>
+This adds a key/value (Three/3) into our hash.
+If we want to retrieve something from the hash we use the key assigned to the value. Like this:
+</p>
+
+<pre>
+  p new_Hash_Two["Three"]
+</pre>
+
+<p>
+Which would return 3.
+</p>
+
+<p>
+Lastly if we want to delete something from the hash we write the following code:
+</p>
+
+<pre>
+  new_Hash_Two.delete(“Three)
+</pre>
+
+<p>
+This would delete key/value associated with key “Three”
+</p>
+
+</p>
+
+<h2>Why use one over the other</h2>
+
+<p>
+
+  So in conclusion an array serves as a kind of list that is not very specific as to the location of its list items. The hashes are a lot more specific and take less time in searching for values as they have specific keys associated with them that can be configured to be more descriptive as to the value in the slot. 
+
+</p>
+
+<br>
+
+<p>
+  So, thats all for this week. These are hard concepts that require practice to get and even now I feel like I still need more time to master them.
+</p>
+<p>
+  Hope this helps
+</p>
+<p>
+  Have a good one…….
+</p>
+
+</section>
+</main>

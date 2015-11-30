@@ -8,6 +8,11 @@ nav {
 	height: 100%;
 }
 
+h3 {
+
+	text-align: left;
+}
+
 li {
 
 	display: block;
@@ -53,8 +58,10 @@ nav a:hover {
 section p {
 
 	text-align: justify;
-	color: black;
-	line-height: 2.5em;
+	color: #3d4987;
+	line-height: 2em;
+	margin: 1em;
+	margin-bottom: 4em;
 }
 
 pre {
@@ -68,13 +75,19 @@ pre {
 	padding: 5px;
 }
 
+#bloglist {
+
+	margin: 1em;
+	float: right;
+}
+
 #post-head {
 
-	text-align: left;
+	text-align: center;
 	font-size: 2em;
 	width: 50%:;
 	display: inline;
-	float:left;
+	clear:both;
 }
 
 #bfooter {
@@ -99,13 +112,6 @@ pre {
 	color: white;
 }
 
-#greeting {
-
-	font-family: monospace;
-	font-weight: bolder;
-	color: white;
-}
-
 #bold {
 
 	font-weight: bolder;
@@ -124,10 +130,9 @@ pre {
 
 .line {
 
-	border-bottom: #3d4987 3px solid;
+	border-bottom: #3d4987 10px double;
 	margin: 0;
 	padding-bottom: 2em;
-
 }
 
 #block {
@@ -143,8 +148,7 @@ pre {
 #blog-nav {
 
 	display:inline-block;
-	font-size: 0.25em;
-	margin: 0;
+	font-size: 7px;
 	margin-top: 0.2em;
 }
 
@@ -158,6 +162,16 @@ pre {
 	text-align: left;
 }
 
+#center {
+
+	text-align: center;
+}
+
+#margin-title {
+
+	margin-top: 2em;
+}
+
 #blog-buttons {
 
 	padding: 1em;
@@ -169,5 +183,4 @@ pre {
 
 	color: black;
 	font-size: 1em;
-
 }

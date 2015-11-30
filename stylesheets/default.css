@@ -5,6 +5,11 @@
 	background-color: #c0f862;
 }
 
+body {
+
+	margin: 0;
+}
+
 li {
 
 	text-decoration: none;
@@ -15,7 +20,6 @@ li {
 	list-style-type: none;
 	display: inline-block;
 	margin: auto;
-
 }
 
 ul {
@@ -25,10 +29,9 @@ ul {
 	padding:0;
 	text-align: center;
 	background-color: transparent;
-
 }
 
-nav{
+nav {
 
 	height: 5em;
 	display:block;
@@ -41,7 +44,7 @@ footer {
 
 	color: #2D5C89;
 	font-weight: bold;
-	text-align: right;
+	text-align: center;
 	margin-bottom: 0;
 }
 
@@ -52,7 +55,7 @@ h3 {
 	font-weight: bold;
 	color: #3d4987;
 	margin-top: 0;
-
+	margin-bottom: 0.5em;
 }
 
 section p {
@@ -60,7 +63,8 @@ section p {
 	color: #3d4987;
 	text-align: center;
 	line-height: 2em;
-
+	margin: 1em;
+	margin-bottom: 4em;
 }
 
 i {
@@ -68,15 +72,20 @@ i {
 	margin: 0.2em;
 }
 
-
 a {
 
 	color: #2D5C89;
 }
 
+span { 
+
+	text-align: center;
+
+}
+
 a:link {
 
-	color: grey;
+	color: white;
 }
 
 a:hover {
@@ -94,26 +103,23 @@ footer a:hover{
 
 	position: relative;
 	margin: auto;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
 	display:block;
 	border-radius: 100em;
 	border:15px solid #1C444C;
 	height: 25%;
 	width: 25%;
-
 }
 
 .topbanner {
 
 	z-index: 1;
-	position:;
 	text-align: center;
 	font-size: 1.25em;
-	padding: 0px 3px 1px 3px;
-	margin: auto;
+	padding: 0;
+	margin: 0;
 	color: white;
-
 }
 
 .logo-a {
@@ -160,24 +166,27 @@ footer a:hover{
 	margin-top: 0;
 	border: 2px double white;
 	background-color: #1166a3;
-	font-family: sans-serif;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 25px;
 }
 
 #greeting {
 
 	background-color: #3976B0;
-	font-family: sans-serif;
-	font-size: 1.5em;
+	font-family: monospace;
+	font-size: 20px;
 	border-radius: 10em;
 	height: 2em;
 	text-align: center;
 	line-height: 2em;
+	color: white;
 }
 
 #lucida {
 
 	font-family: monospace;
-	font-size: 5em;
+	font-size: 35px;
 }
 
 #info {
@@ -189,6 +198,14 @@ footer a:hover{
 #footer {
 
 	margin-bottom: 0;
+	padding-bottom: 1em;
+}
+
+#dog {
+
+	margin-left: 25%;
+	margin-right: 25%;
+	border-radius: 10em;
 }
 
 #whiteback {
@@ -199,6 +216,19 @@ footer a:hover{
 	text-align: center;
 	background-position: center;
 	margin: 0;
+	border-bottom: white solid 10px;
+	border-top: white solid 10px;
+}
+
+#whitebackhome {
+
+	background-image: url(http://aterrizar.net/wp/wp-content/uploads/2014/10/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	text-align: center;
+	background-position: ;
+	margin: 0;
+	margin-bottom: 1em;
 	border-bottom: white solid 10px;
 	border-top: white solid 10px;
 }
